@@ -2,3 +2,4 @@ clc清屏
 clear清工作区
 clf清除图形
 批量注释ctrl+r 取消注释ctrl+t
+subplot（m行，n列，当前第p张图像）

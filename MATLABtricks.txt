@@ -1,5 +1,16 @@
 clc清屏
 clear清工作区
 clf清除图形
+多行注释可用%{和%} 类似于C语言/**/
 批量注释ctrl+r 取消注释ctrl+t
-subplot（m行，n列，当前第p张图像）
+格式化 ctrl+i
+figure函数新建图窗，figure函数中有很多内容，以后慢慢整理，参考https://www.cnblogs.com/gengyi/p/9388388.html
+plot函数内容整理
+
+subplot（m行n列当前第p张图像）
+madjust()函数调节图像的对比度
+bw的意思是black&white
+
+hold on保留原图 hold off取消保留
+
+%%两个百分号设定程序块（cell），可以分块运行

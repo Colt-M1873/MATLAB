@@ -14,3 +14,17 @@ bw的意思是black&white
 hold on保留原图 hold off取消保留
 
 %%两个百分号设定程序块（cell），可以分块运行
+
+颜色抖动？
+dither函数实现颜色抖动
+
+
+imhist( i );直接显示图像i的灰度直方图； 
+imhist（i，n）n为指定灰度级显示直方图； 
+[count, x] = imhist( i ) 获取直方图信息，count为每一级灰度像素个数，x为灰度级，x也可以在imhist（i，x）中指定，可以通过stem（x，count）画相应直方图；
+
+
+
+
+
+

@@ -44,19 +44,19 @@ plot(number),xlim([0,256]),title('手写代码求直方图')
 subplot(512);
 one_number=number/(R*C);
 plot(one_number),xlim([0,256]),title('归一化直方图')
-
+%%
 
 %matlab自带直方图函数
 subplot(513);
 imhist(grayImg)%按默认方式直接显示直方图
-
+%%
 subplot(514);
 imhist(grayImg,30)%按30个灰度级显示直方图
-
+%%
 grayHist=imhist(grayImg);%返回值为一个长度为256的数列，该数列相应位置的数值为该灰度下点的个数
 subplot(515);
 plot(grayHist),xlim([0,256]),title('MATLAB自带函数求直方图')
-
+%%
 %直方图均衡化
 figure(3)
 eqImg=histeq(grayImg);%按照默认灰度级对grayImg进行直方图均衡
@@ -64,32 +64,51 @@ subplot(211)
 imshow(eqImg)
 subplot(212)
 imhist(eqImg)%显示均衡后的直方图
-
+%%
 figure(4)
 eqImg2=histeq(grayImg,10);%按照10个灰度级对grayImg进行直方图均衡
 subplot(211)
 imshow(eqImg2)
 subplot(212)
 imhist(eqImg2)
-
+%%
 
 figure(5)
-histFunc=10:1:255;%均衡函数？？理解
+histFunc=10:50:255;%均衡函数，以50为步进值来区分灰度级
 eqImg3=histeq(grayImg,histFunc);%
 subplot(211)
 imshow(eqImg3)
 subplot(212)
 imhist(eqImg3)
 
-
-% 
-% eqHist=imhist(eqImg);
+%%
+%直方图规定化
+% figure(6)
+% eqHist=imhist(eqImg3);
 % eqImg2=histeq(grayImg);
 % subplot(212)
 % imshow(eqImg2)
 % 
 % subplot(212);
 % plot(eqHist),xlim([0,256]),title('直方图')
+
+%%
+%线性处理
+figure(6)
+subplot(221)
+imshow(grayImg)
+subplot(222)
+plusgrayImg=grayImg+150;%整体增强亮度
+imshow(plusgrayImg)
+subplot(223)
+plusgrayImg=grayImg/30+150;%减弱对比度并增强亮度
+imshow(plusgrayImg)
+subplot(224)
+plusgrayImg=(plusgrayImg-150)*30;%反向运算能还原图像，但不能完全还原，因为在第一次除法时小数被取舍成了整数
+imshow(plusgrayImg)
+
+
+
 
 
 

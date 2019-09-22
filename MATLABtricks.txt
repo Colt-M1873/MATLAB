@@ -25,6 +25,8 @@ imhist（i，n）n为指定灰度级显示直方图；
 
 
 
+strel——structuring element 运用各种形状和大小构造元素
 
-
-
+功能：regionprops(英文get the properties of region)用来度量图像区域属性的函数.常用来统计被标记的区域的面积分布，显示区域总数。
+语法：STATS = regionprops(L,properties)
+描 述：测量标注矩阵 L中每一个标注区域的一系列属性。L 中不同的正整数元素对应不同的区域， 例如：L 中等于整数1的元素对应区域1；L 中等于整数2的元素对应区域2;以此类推。

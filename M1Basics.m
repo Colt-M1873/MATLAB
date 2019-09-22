@@ -14,7 +14,6 @@ title('GrayImage')
 
 %二值化处理
 level=graythresh(grayImg)%利用最大类间方差法（Otsu）找到图片的一个合适阈值（0-1之间）
-%bw=im2bw(gray,level)
 bwImg=imbinarize(grayImg,level);%以level为阈值对图像进行二值化处理
 subplot(223);
 imshow(bwImg);

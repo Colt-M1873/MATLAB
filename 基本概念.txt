@@ -39,14 +39,10 @@
 平均算子：如3x3的平均算子矩阵，矩阵中每个数都为1/9，卷积后的值为原图9个像素点的均值
 
 中值滤波：找出原矩阵的中值，生成新图像，可用于背景提取
-Canny算法提取边缘
 
-查霍夫变换
-圆检测
-halcon
-机器视觉颗粒计数
-hdevelop
+Canny算法提取边缘效果最好
 
+霍夫变换可用于检测直线、圆、椭圆等
 
 分割连通区域统计
 小连通区域计数
@@ -56,5 +52,15 @@ matlab里有连通域标记的函数bwlabel，具体自己help吧
 至于求连通域面积，stats=regionprops(ibw,'Area');%ibw是标记号的图
 求中值也有这函数的，median（A）
 别的就很随意了 
+
+bwareaopen
+bwarea
+imclearborder
+
+bwboundaries和canny的区别
+bw仅限于二值图像，canny可辨别普通灰度图
+
+
+
 
 ostu阈值分割+连通区域法

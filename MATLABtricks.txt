@@ -1,3 +1,5 @@
+MATLAB  Matrix Laboratory
+
 clc清屏
 clear清工作区
 clf清除图形

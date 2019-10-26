@@ -1,27 +1,10 @@
-%G(s)=num/den
-%两种求系统相应的方式
-figure(1);
-subplot(211);
 syms s;
-t=[0:0.1:40];
-num=[1]; 
-den=[1,0.3,1];
-impulse(num,den,t);%就等于输入系统G(s)=1/(s^2+0.3s+1)
-grid;
-title('Unit-impulse Response of G(s)=1/(s^2+0.3s+1)') 
-
-subplot(212);
 s=tf('s');%tf表示传递函数
-G=1/(s^2+0.3*s+1);%建立系统
-impulse(G);
+%G=1/(s^2+0.3*s+1);
+GH=(s*s+2*s+4)/(s*(s+4)*(s+6)*(s*s+1.4*s+1));%GH为开环传递函数
+rlocus(GH);
 grid;
 
-figure(2);
-subplot(211);
-G=1/(s^2+0.3*s+1);%建立系统
-step(G);%G的单位阶跃相应
-grid;
-subplot(212);
-G=1/(s^2+0.3*s+1);%建立系统
-step(G/s);%G的斜坡相应，matlab里没有斜坡相应函数，因此通过将输入的阶跃积分，即除以s得到
-grid;
+
+
+

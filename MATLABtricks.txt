@@ -2,6 +2,11 @@ MATLAB  Matrix Laboratory
 
 i j在未用作变量名时可用于表示虚数单位，更正规的表示方式是 1i 1j
 
+tic toc用于计时
+tic
+%中间放待测的程序
+t1=toc
+此时t1显示的就是中间部分代码执行的时间
 定义函数
 
 

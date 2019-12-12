@@ -1,4 +1,9 @@
 MATLAB  Matrix Laboratory
+最基础的裁剪矩阵，比如m行n列的矩阵A
+则B=A(a1:a2,b1:b2)
+表示B为矩阵A中的的a1行到a2行，b1列到b2列
+
+
 
 i j在未用作变量名时可用于表示虚数单位，更正规的表示方式是 1i 1j
 

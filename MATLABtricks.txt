@@ -3,6 +3,13 @@ MATLAB  Matrix Laboratory
 则B=A(a1:a2,b1:b2)
 表示B为矩阵A中的的a1行到a2行，b1列到b2列
 
+矩阵拼接：M N为两个初始矩阵
+A=[M:N]或A=[M N]表示横向拼接
+A=[M;N]表示纵向拼接
+
+
+
+
 *是矩阵乘法   .*是对应位置相乘
 
 求能量：
@@ -10,6 +17,8 @@ MATLAB  Matrix Laboratory
 
 帕西瓦尔能量定理parseval‘s theorem： sum(x.^2) = 1/N*sum(xfft.^2).其中x是原数据，xfft是fft后的数据，N是数据的长度。
 
+
+repmat复制平铺相同矩阵
 
 i j在未用作变量名时可用于表示虚数单位，更正规的表示方式是 1i 1j
 

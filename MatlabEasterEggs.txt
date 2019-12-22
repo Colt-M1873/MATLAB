@@ -19,7 +19,24 @@ knot显示结
 xpklein克莱因瓶
 
 
-
+%鸟声
+load chirp
+sound(y,Fs)
+%锣声
+load gong
+sound(y,Fs)
+%哈里路亚
+load handel
+sound(y,Fs)
+%笑声
+load laughter
+sound(y,Fs)
+%啪哒声
+load splat
+sound(y,Fs)
+%火车
+load train
+sound(y,Fs)
 
 
 

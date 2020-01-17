@@ -1,5 +1,10 @@
 MATLAB  Matrix Laboratory
 
+保存图片
+saveas只能保存figure图窗中的图片
+想保存原图用imwrite
+imwrite(fuse, 'D:\op\qwfazstest.jpg');
+
 最基础的裁剪矩阵，比如m行n列的矩阵A
 则B=A(a1:a2,b1:b2)
 表示B为矩阵A中的的a1行到a2行，b1列到b2列

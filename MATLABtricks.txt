@@ -4,6 +4,15 @@ MATLAB  Matrix Laboratory
 saveas只能保存figure图窗中的图片
 想保存原图用imwrite
 imwrite(fuse, 'D:\op\qwfazstest.jpg');
+想用imwrite保存figure图窗中的图片
+则可
+f=getframe(gcf);%此处gcf为当前图窗，getframe作用为获得该图窗的图像，得到返回值f为一个由cdata和colormap组成的结构体，其中cdata为图像
+imwrite(f.cdata, 'D:\op\tempresult.png');
+
+想要不显示figure图窗则设置Visible属性为off
+fh = figure('Visible','off');
+想要显示的时候
+set(fh,'Visible','on'); 
 
 最基础的裁剪矩阵，比如m行n列的矩阵A
 则B=A(a1:a2,b1:b2)

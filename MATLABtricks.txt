@@ -1,5 +1,20 @@
 MATLAB  Matrix Laboratory
 
+【Ctrl+I】--自动缩进(即自动排版,对多行有效)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 保存图片
 saveas只能保存figure图窗中的图片
 想保存原图用imwrite

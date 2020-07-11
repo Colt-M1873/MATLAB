@@ -1,6 +1,8 @@
 MATLAB  Matrix Laboratory
 
 【Ctrl+I】--自动缩进(即自动排版,对多行有效)
+【Ctrl+r】--注释
+【Ctrl+t】--取消注释
 
 
 
@@ -12,7 +14,7 @@ MATLAB  Matrix Laboratory
 
 
 
-
+字符串中插入数字可通过加方括号[]和逗号来实现，saveas(1,['D:\op\2\',num2str(i),'.jpg']);%由此便可将数字插入到输出路径字符串中
 
 
 保存图片
